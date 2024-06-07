@@ -1,0 +1,436 @@
+.create-post-container {
+  background-color: rgb(214, 224, 227);
+  height: fit-content;
+}
+.div-container-create {
+  padding: 2.5rem 8rem;
+}
+.create-post-text {
+  color: rgb(92, 92, 91);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.grid-create-post {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  grid-gap: 2rem;
+}
+.draft-comments {
+  text-align: end;
+
+  > span {
+    color: blue;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.8rem;
+    border-radius: 2rem;
+    &:hover {
+      cursor: pointer;
+      background-color: rgb(203, 200, 200);
+    }
+    > span {
+      background-color: gray;
+      border-radius: 0.2rem;
+      color: rgb(255, 255, 255);
+      padding: 0.2rem 0.3rem;
+    }
+  }
+}
+.slectOption {
+  margin-top: 2rem;
+}
+.select-option {
+  width: 20rem;
+  background-color: #ffffff;
+  border-radius: 0.3rem;
+}
+
+.quill-container {
+  padding: 1rem;
+}
+.ql-toolbar {
+  background-color: #f2f6f7;
+}
+.ql-editor {
+  width: 45rem !important;
+  height: 7rem !important;
+  > p {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+.bo-da-ta {
+  display: flex;
+  padding: 1rem 1.5rem;
+  gap: 1.5rem;
+  > div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 0.15rem solid rgb(190, 183, 183);
+    color: #c7bdbd;
+    padding: 0.2rem 0.8rem;
+    border-radius: 2rem;
+    cursor: no-drop;
+    &:hover {
+      background-color: rgb(245, 246, 246);
+    }
+  }
+  > .nsfw {
+    color: rgb(143, 141, 141);
+    cursor: pointer;
+  }
+}
+.hr {
+  background-color: rgb(243, 240, 240);
+  height: 0.1rem;
+  margin: 0 1rem;
+}
+.btn-comment {
+  margin: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  > button {
+    padding: 0.2rem 1rem;
+    border-color: rgb(97, 148, 226);
+    background-color: white;
+    border-radius: 2rem;
+    font-weight: 900;
+    color: rgb(83, 83, 204);
+    &:hover {
+      background-color: rgb(83, 83, 204);
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+.last-post {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  color: #504e4e;
+  > p {
+    margin-bottom: 0.5rem;
+    > span {
+      color: blue;
+      cursor: pointer;
+    }
+  }
+}
+.check-box {
+  margin: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  > input {
+    transform: scale(1.5);
+  }
+  > label {
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+}
+.last-con {
+  margin: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+  > p {
+    font-size: 0.9rem;
+    text-decoration: underline;
+    font-weight: 500;
+    color: rgb(78, 126, 247);
+    cursor: pointer;
+  }
+}
+.create-post-header-container {
+  background-color: #ffffff;
+}
+.create-post-header-data {
+  margin-top: 0.7rem;
+  display: flex;
+  justify-content: space-evenly;
+  border: 2px solid rgb(249, 245, 245);
+  > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 2px solid rgb(249, 245, 245);
+    padding: 0.7rem 3.3rem;
+    font-size: 0.9rem;
+  }
+}
+.hkhklhlk {
+  cursor: pointer;
+  &:hover {
+    background-color: #ebf3f7;
+  }
+}
+.hklhlhfs {
+  cursor: no-drop;
+  color: #c7bdbd;
+}
+.input-title-con {
+  margin: 1rem;
+}
+.input-textfield {
+  width: 45rem;
+}
+.inp-title {
+  padding: 0.8rem;
+}
+.right-side-create-comments {
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  height: 18rem;
+}
+.comment-icon-text {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  gap: 1rem;
+  border-bottom: 0.2rem solid rgb(246, 243, 243);
+  padding-bottom: 0.5rem;
+  > img {
+    transform: rotate(-25deg);
+  }
+  > p {
+    font-weight: 600;
+    color: #504e4e;
+  }
+}
+.container {
+  margin: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20rem;
+  flex-direction: column;
+}
+.dropzone {
+  align-items: center;
+  border: 1px dashed grey;
+  border-radius: 0.3rem;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+}
+.list-container {
+  font-size: 0.8rem;
+  padding: 1rem;
+  > li {
+    color: #504e4e;
+    padding: 0.6rem 0;
+    border-bottom: 0.2rem solid rgb(246, 243, 243);
+    font-weight: 500;
+  }
+}
+.textuploadImg {
+  color: rgb(0, 110, 255);
+}
+.uploadFile {
+  color: rgb(0, 170, 255);
+  border: 0.18rem solid rgb(0, 170, 255);
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+#createPostDarkTheme {
+  background-color: #504e4e;
+  color: white;
+  > div {
+    > div {
+      > h3 {
+        color: rgb(232, 224, 224);
+      }
+    }
+    > div {
+      > div {
+        background-color: transparent;
+        color: white;
+        > .create-post-header-container {
+          background-color: rgb(52, 44, 44);
+        }
+        > .right-side-create-comments {
+          background-color: rgb(52, 44, 44);
+          color: white;
+          > div {
+            > p {
+              color: white;
+            }
+          }
+          > ol {
+            > li {
+              color: white;
+              border-color: #504e4e;
+            }
+          }
+        }
+        > div {
+          color: white;
+          > p {
+            > span {
+              letter-spacing: 0.1rem;
+              color: rgb(3, 255, 53);
+            }
+          }
+          > span {
+            color: rgb(181, 189, 233);
+            letter-spacing: 0.1rem;
+            &:hover {
+              background-color: gray;
+            }
+          }
+
+          > div {
+            background-color: rgb(52, 44, 44);
+            color: white;
+            border-color: rgb(130, 126, 126);
+            > .quill-container {
+              &:hover {
+                background-color: rgb(52, 44, 44);
+              }
+            }
+            > .drop-image {
+              &:hover {
+                background-color: transparent;
+              }
+            }
+            > div {
+              color: white;
+              border-color: rgb(130, 126, 126);
+              &:hover {
+                background-color: #565353;
+              }
+              > label {
+                color: white;
+              }
+              > div {
+                color: white;
+
+                > div {
+                  background-color: rgb(147, 141, 141);
+                  color: white;
+
+                  > button {
+                    color: white;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .ql-editor {
+    width: 38rem !important;
+  }
+  .create-post-text {
+    font-size: 1.1rem;
+  }
+  /* .draft-comments {
+    text-align: left;
+  } */
+  /* .grid-create-post {
+    display: block;
+  } */
+  .right-side-create-comments {
+    display: none;
+  }
+  .last-post {
+    display: none;
+  }
+  .create-post-header-container {
+    width: 83%;
+  }
+
+  .grid-create-post {
+    display: block;
+  }
+  .create-post-header-container {
+    width: 100%;
+  }
+  .create-post-header-data {
+    > div {
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+  }
+  .input-textfield {
+    width: 95%;
+  }
+  .input-title-con {
+    margin-right: 0.1rem;
+  }
+  .hgsh {
+    margin-left: 1rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .ql-editor {
+    width: 12rem !important;
+  }
+  .div-container-create {
+    padding: 0.5rem;
+  }
+  .grid-create-post {
+    display: block;
+  }
+  .right-side-create-comments {
+    display: none;
+  }
+  .create-post-header-container {
+    width: 100%;
+  }
+  .textuploadImg {
+    font-size: 0.8rem;
+  }
+  .input-title-con {
+    width: 80%;
+  }
+  .css-1u3bzj6-MuiFormControl-root-MuiTextField-root,
+  .css-i44wyl {
+    width: 100%;
+  }
+  .quill-container {
+    margin-left: 0 !important;
+  }
+  .create-post-header-data {
+    > div {
+      font-size: 0.8rem;
+      padding: 0.2rem;
+      gap: 0.3rem;
+      > img {
+        width: 12px !important;
+      }
+    }
+  }
+  .bo-da-ta {
+    gap: 0.5rem;
+    > div {
+      padding: 0.2rem;
+      > h4 {
+        font-size: 0.8rem;
+      }
+    }
+    > .nsfw {
+      > h4 {
+        font-size: 0.75rem;
+      }
+    }
+  }
+  .ql-toolbar.ql-snow .ql-formats {
+    font-size: 0.8rem;
+    margin-right: 0px !important;
+  }
+  .ql-snow.ql-toolbar button {
+    font-size: 0.8rem !important;
+    width: 26px !important;
+  }
+}
